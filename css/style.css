@@ -54,7 +54,7 @@ select {
 
 a {
     text-decoration: none;
-    /* color: inherit; */
+    color: inherit;
 }
 
 body {
@@ -65,12 +65,18 @@ body {
     font-style: normal;
     line-height: 160%;
     color: #333333;
+    background-color: #FFFFFF
 }
 
 .container {
     max-width: 1190px;
     padding: 0 10px;
     margin: 0 auto;
+}
+
+.section__all {
+    padding-top: 140px;
+    padding-bottom: 140px;
 }
 
 .header {
@@ -80,6 +86,19 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(35, 82, 222, 0.5);
 }
 
 .header__menu-inner {
@@ -93,11 +112,11 @@ body {
 }
 
 .logo:hover {
-
+    /* background-image: rgba(255, 255, 255, 0.7); */
 }
 
 .logo:focus {
-    /* border: 3px solid #2352DE; */
+    /* outline: 3px solid rgba(255, 255, 255, 0.0001); */
 }
 
 .logo:active {
@@ -114,16 +133,15 @@ body {
 }
 
 .header__menu-item:hover {
-
+    text-decoration: underline #ffffff;
 }
 
 .header__menu-item:focus {
-    outline: none;
-    border-color: (255, 255, 255, 50%);
-}
+    outline-color: rgba(255, 255, 255, 0.0001);
+} 
 
 .header__menu-item:active {
-
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .header__content-wrapper {
@@ -132,20 +150,166 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    min-height: calc(100vh - 210px);
 }
+
 .header__content-titel {
     font-weight: 400;
     font-size: 48px;
     line-height: 130%;
-    color: #fff;
+    color: #ffffff;
 }
 
 .header__content-subtitel {
     font-weight: 700;
     font-size: 90px;
     line-height: 130%;
-    color: #fff;
+    color: #ffffff;
 }
+
+.arrow__link {
+    line-height: 130%;
+    color: #fff;
+    position: relative;
+    margin-left: 50%;
+}
+
+.arrow__link::after {
+    content: "";
+    position: absolute;
+    width: 37px;
+    height: 23px;
+    bottom: -120%;
+    left: 40%;
+    background-image: url("../images/arrow-icon.svg");
+
+}
+
+.arrow__link:hover {
+    text-decoration: underline #ffffff;;
+}
+
+.arrow__link:focus {
+    outline-color: rgba(255, 255, 255, 0.0001);
+}
+
+.arrow__link:active {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.title {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    left: 0;
+    bottom: 10%;
+    background-color: rgba(35, 82, 222, 0.1);
+}
+
+/* ----------------------------------------
+секция про мене */
+
+.about__text {
+    font-weight: 400;
+}
+
+.about__text-one {
+    margin-bottom: 25px;
+}
+
+/* ----------------------------------- */
+/* секция Навички */
+.skills {
+    background-color: #F6F6F8;
+}
+
+.skills__container {
+    display: flex;
+    align-items: center;
+}
+
+.progress {
+    margin-top: 213px;
+    margin-bottom: 91px;
+    margin-left: 90px;
+}
+.bar {
+    display:  flex;
+    justify-content: space-between;
+}
+
+.bar+.bar {
+    margin-top: 86px;
+}
+
+.line__basic {
+    width: 600px;
+    height: 32px;
+    background-color: #DBDBED;
+    flex: none;
+}
+
+.line__blue{
+    height: 32px;
+    background-color: #2352DE;
+    flex: none;
+}
+
+.bar__text {
+    text-transform: uppercase;
+}
+
+/* ------------------------------------
+секция Послуги */
+.services__title {
+    margin-bottom: 150px;
+}
+
+.services__list {
+    display: flex;
+}
+
+.services__item {
+    max-width: 330px;
+    position: relative;
+}
+
+.services__item+.services__item {
+    margin-left: 90px;
+}
+
+.services__item::before {
+    content: "";
+    position: absolute;
+    top: -60%;
+    width: 60px;
+    height: 60px;
+}
+
+.services__item-code::before {
+    background-image: url("../images/sevices-icon-code.svg");
+}
+
+.services__item-dev::before {
+    background-image: url("../images/sevices-icon-dev.svg");
+}
+
+.services__item-chat::before {
+    background-image: url("../images/sevices-icon-chat.svg");
+}
+
+
+
 
 
 
