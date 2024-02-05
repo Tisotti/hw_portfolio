@@ -112,15 +112,13 @@ body {
 }
 
 .logo:hover {
-    /* background-image: rgba(255, 255, 255, 0.7); */
-}
-
-.logo:focus {
-    /* outline: 3px solid rgba(255, 255, 255, 0.0001); */
+    opacity: 0.7;
+    transition: opacity 0.4s linear;
 }
 
 .logo:active {
-
+    opacity: 0.5;
+    transition: opacity 0.4s linear;
 }
 
 .header__menu-item+.header__menu-item {
@@ -132,16 +130,18 @@ body {
     color: #ffffff;
 }
 
-.header__menu-item:hover {
+.header__menu-link:hover {
     text-decoration: underline #ffffff;
 }
 
-.header__menu-item:focus {
+.header__menu-link:focus {
     outline-color: rgba(255, 255, 255, 0.0001);
+    transition: outline-color 0.4s linear;
 } 
 
-.header__menu-item:active {
-    color: rgba(255, 255, 255, 0.7);
+.header__menu-link:active {
+    opacity: 0.7;
+    transition: opacity 0.4s linear;
 }
 
 .header__content-wrapper {
@@ -186,15 +186,17 @@ body {
 }
 
 .arrow__link:hover {
-    text-decoration: underline #ffffff;;
+    text-decoration: underline #ffffff;
 }
 
 .arrow__link:focus {
     outline-color: rgba(255, 255, 255, 0.0001);
+    transition: outline-color 0.4s linear;
 }
 
 .arrow__link:active {
-    color: rgba(255, 255, 255, 0.5);
+    opacity: 0.7;
+    transition: opacity 0.4s linear;
 }
 
 .title {
@@ -233,14 +235,12 @@ body {
     background-color: #F6F6F8;
 }
 
-.skills__container {
+.skills__wrapper {
     display: flex;
     align-items: center;
 }
 
 .progress {
-    margin-top: 213px;
-    margin-bottom: 91px;
     margin-left: 90px;
 }
 .bar {
@@ -267,8 +267,8 @@ body {
 
 .bar__text {
     text-transform: uppercase;
+    width: 65px;
 }
-
 /* ------------------------------------
 секция Послуги */
 .services__title {
