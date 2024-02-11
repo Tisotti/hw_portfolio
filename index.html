@@ -56,19 +56,15 @@
           <h2 class="title">Про мене</h2>
           <div class="about__text">
             <p>
-              Вітаю всіх на своєму сайті! Мене звати Сергій, я з
-              Івано-Франківська. Займаюся фронтенд-розробкою трохи більше року.
-              До розробки займався нелюбимою справою, ходив на роботу, що не
-              подобалася мені, не міг зрозуміти, як знайти працю за покликанням
-              і робити те, що подобається, заробляючи собі на життя, допоки не
+              Вітаю всіх на своєму сайті! Мене звати Сергій, я з Івано-Франківська. Займаюся фронтенд-розробкою трохи
+              більше року. До розробки займався нелюбимою справою, ходив на роботу, що не подобалася мені, не міг
+              зрозуміти, як знайти працю за покликанням і робити те, що подобається, заробляючи собі на життя, допоки не
               знайшов один цікавий курс.
             </p>
             <p>
-              З того часу багато чого дізнався, навчання давалося по-різному:
-              десь легше, десь складніше. Щоденна робота над навичками та
-              зусилля, яких я докладав, вже за кілька місяців принесли плоди -
-              вдалось взяти замовлення на фрілансі. З відгуками від задоволених
-              клієнтів та прикладами моїх робіт можна ознайомитися нижче
+              З того часу багато чого дізнався, навчання давалося по-різному: десь легше, десь складніше. Щоденна робота
+              над навичками та зусилля, яких я докладав, вже за кілька місяців принесли плоди - вдалось взяти замовлення
+              на фрілансі. З відгуками від задоволених клієнтів та прикладами моїх робіт можна ознайомитися нижче
             </p>
           </div>
         </div>
@@ -78,10 +74,7 @@
         <div class="container">
           <h2 class="title">Навички</h2>
           <div class="skills__wrapper">
-            <img
-              class="skills__img"
-              src="./images/skills-img.jpg"
-              alt="Сергій Сірко" />
+            <img class="skills__img" src="./images/skills-img.jpg" alt="Сергій Сірко" />
             <div class="progress">
               <div class="bar">
                 html
@@ -113,31 +106,71 @@
             <li class="services__item services__item-code">
               <h3 class="sevices__subtitel">Верстка проєктів</h3>
               <p class="services__text">
-                Зроблю якісну верстку вашого проєкта за наявним макетом або
-                прикладами робіт, які вам подобаються
+                Зроблю якісну верстку вашого проєкта за наявним макетом або прикладами робіт, які вам подобаються
               </p>
             </li>
 
             <li class="services__item services__item-dev">
               <h3 class="sevices__subtitel">Посадка на CMS</h3>
-              <p class="services__text">
-                Інтегрую ваш проєкт з однією з популярних CMS
-              </p>
+              <p class="services__text">Інтегрую ваш проєкт з однією з популярних CMS</p>
             </li>
 
             <li class="services__item services__item-chat">
               <h3 class="sevices__subtitel">Підтримка сайта</h3>
-              <p class="services__text">
-                Гарантую підтримку вашого сайта протягом 30 днів післе здачі
-                проєкта
-              </p>
+              <p class="services__text">Гарантую підтримку вашого сайта протягом 30 днів післе здачі проєкта</p>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="work section">
+        <div class="container">
+          <h2 class="title work__title">Мої роботи</h2>
+          <div class="work__filter">
+            <ul class="work__list">
+              <li class="work__item">
+                <a class="work__link" data-filter="all" href="#">Усі роботи</a>
+              </li>
+              <li class="work__item">
+                <a class="work__link" data-filter=".category-a" href="#">Лендінги </a>
+              </li>
+              <li class="work__item">
+                <a class="work__link" data-filter=".category-b" href="#">Корпоративні </a>
+              </li>
+              <li class="work__item">
+                <a class="work__link" data-filter=".category-c" href="#">E-commerce </a>
+              </li>
+            </ul>
+          </div>
+          <div class="work__gallery">
+            <div class="work__gallery-item mix category-a">
+              <img class="work__img" src="./images/works/work_1.jpg" alt="фото роботи" />
+            </div>
+            <div class="work__gallery-item mix category-b">
+              <img class="work__img" src="./images/works/work_2.jpg" alt="фото роботи" />
+            </div>
+            <div class="work__gallery-item mix category-c">
+              <img class="work__img" src="./images/works/work_3.jpg" alt="фото роботи" />
+            </div>
+            <div class="work__gallery-item mix category-a">
+              <img class="work__img" src="./images/works/work_4.jpg" alt="фото роботи" />
+            </div>
+            <div class="work__gallery-item mix category-b">
+              <img class="work__img" src="./images/works/work_5.jpg" alt="фото роботи" />
+            </div>
+            <div class="work__gallery-item mix category-c">
+              <img class="work__img" src="./images/works/work_6.jpg" alt="фото роботи" />
+            </div>
+          </div>
+          <div class="work__download">
+            <a href="#" class="work__download-link">Завантажити ще</a>
+          </div>
         </div>
       </section>
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/mixitup.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
