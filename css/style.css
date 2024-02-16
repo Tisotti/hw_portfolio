@@ -160,10 +160,9 @@ body {
 
 .header__menu-link {
   line-height: 130%;
+  text-decoration: underline transparent;
   border: 2px solid transparent;
-  text-decoration: underline rgba(255, 255, 255, 0);
-  transition: text-decoration 0.4s linear, border 0.4s linear,
-    opacity 0.4s linear;
+  transition: text-decoration 0.4s linear, border 0.4s linear, opacity 0.4s linear;
 }
 
 .header__menu-link:hover {
@@ -207,7 +206,8 @@ body {
   transform: translate(-50%);
   padding-bottom: 35px;
   border: 2px solid transparent;
-  transition: underline 0.4s linear, border 0.4s linear, opacity 0.4s linear;
+  text-decoration: underline transparent;
+  transition: text-decoration 0.4s linear, border 0.4s linear, opacity 0.4s linear;
 }
 
 .arrow__link::after {
@@ -306,8 +306,6 @@ body {
   margin-right: 90px;
 }
 
-.services__item::before,
-.services__item::before,
 .services__item::before {
   content: "";
   width: 60px;
@@ -398,23 +396,37 @@ body {
   transform: scale(1.15);
 }
 
-.work__download {
-  width: 203px;
-  height: 47px;
-  background-color: #2352de;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.work__download-link {
+.work__download-btn {
   color: #ffffff;
-  border: 3px solid transparent;
+  background-color: #2352de;
+  border: 1px solid transparent;
+  padding: 12px 24px;
+  outline: 3px solid transparent;
+  transition: border 0.4s linear, background-color 0.4s linear, color 0.4s linear, outline 0.4s linear,
+    box-shadow 0.4s linear;
+  line-height: 130%;
+  cursor: pointer;
 }
 
-/* .work__download-link:focus {
-  border: 3px solid rgba(35, 82, 222, 0.5);
-} */
+.work__download-btn:hover {
+  background-color: #ffffff;
+  border: 1px solid #2352de;
+  color: #2352de;
+  outline: transparent;
+}
+
+.work__download-btn:focus {
+  outline: 3px solid rgba(35, 82, 222, 0.5);
+}
+
+.work__download-btn:active {
+  background-color: #2352de;
+  color: #ffffff;
+  box-shadow: inset 0 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* -------------------------------------------------------
+секция отзывы - reviews */
+.reviews {
+  background-color: #f6f6f8;
+}
