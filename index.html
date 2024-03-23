@@ -6,9 +6,8 @@
     <title>Сергій Сірко портфоліо | Головна сторінка</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&family=Roboto&family=Roboto+Condensed&display=swap"
-      rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -16,157 +15,254 @@
       <div class="container">
         <nav class="navigation">
           <a class="logo" href="#">
-            <img class="logo__icon" src="./images/logo-svg.svg" alt="логотип" />
+            <img class="logo__img" src="./images/logo-svg.svg" alt="логотип" />
           </a>
-          <ul class="header__menu-list">
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Про мене</a>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#">Про мене</a>
             </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Навички</a>
+            <li class="header__item">
+              <a class="header__link" href="#">Навички</a>
             </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Послуги</a>
+            <li class="header__item">
+              <a class="header__link" href="#">Послуги</a>
             </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Портфоліо</a>
+            <li class="header__item">
+              <a class="header__link" href="#">Портфоліо</a>
             </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Відгуки</a>
+            <li class="header__item">
+              <a class="header__link" href="#">Відгуки</a>
             </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Контакти</a>
+            <li class="header__item">
+              <a class="header__link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
         <div class="header__content">
-          <h1 class="header__content-titel">
+          <h1 class="header__title">
             Вітаю, я Сергій Сірко
-            <span class="header__content-subtitel">frontend-розробник</span>
+            <span class="header__subtitle">frontend-розробник</span>
           </h1>
-          <a class="arrow__link" href="#">дивитися роботи</a>
+          <a class="header__button" href="#">дивитися роботи</a>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="about section">
+      <section class="section about">
         <div class="container">
           <h2 class="title">Про мене</h2>
-          <div class="about__text">
+          <ul class="about__text">
             <p>
-              Вітаю всіх на своєму сайті! Мене звати Сергій, я з Івано-Франківська. Займаюся фронтенд-розробкою трохи
-              більше року. До розробки займався нелюбимою справою, ходив на роботу, що не подобалася мені, не міг
-              зрозуміти, як знайти працю за покликанням і робити те, що подобається, заробляючи собі на життя, допоки не
-              знайшов один цікавий курс.
+              Вітаю всіх на своєму сайті! Мене звати Сергій, я з Івано-Франківська. Займаюся фронтенд-розробкою трохи більше року. До розробки займався нелюбимою справою, ходив на роботу, що не
+              подобалася мені, не міг зрозуміти, як знайти працю за покликанням і робити те, що подобається, заробляючи собі на життя, допоки не знайшов один цікавий курс.
             </p>
             <p>
-              З того часу багато чого дізнався, навчання давалося по-різному: десь легше, десь складніше. Щоденна робота
-              над навичками та зусилля, яких я докладав, вже за кілька місяців принесли плоди - вдалось взяти замовлення
-              на фрілансі. З відгуками від задоволених клієнтів та прикладами моїх робіт можна ознайомитися нижче
+              З того часу багато чого дізнався, навчання давалося по-різному: десь легше, десь складніше. Щоденна робота над навичками та зусилля, яких я докладав, вже за кілька місяців принесли плоди
+              - вдалось взяти замовлення на фрілансі. З відгуками від задоволених клієнтів та прикладами моїх робіт можна ознайомитися нижче
             </p>
-          </div>
+          </ul>
         </div>
       </section>
 
-      <section class="skills section">
+      <section class="section skills">
         <div class="container">
           <h2 class="title">Навички</h2>
           <div class="skills__wrapper">
             <img class="skills__img" src="./images/skills-img.jpg" alt="Сергій Сірко" />
-            <div class="progress">
-              <div class="bar">
+            <ul class="skills__list">
+              <li class="skills__item">
                 html
-                <div class="line__basic">
-                  <div class="line__blue" style="width: 80%"></div>
+                <div class="skills__bar">
+                  <div class="skills__progress" style="width: 85%"></div>
                 </div>
-              </div>
-              <div class="bar">
+              </li>
+              <li class="skills__item">
                 css
-                <div class="line__basic">
-                  <div class="line__blue" style="width: 76%"></div>
+                <div class="skills__bar">
+                  <div class="skills__progress" style="width: 80%"></div>
                 </div>
-              </div>
-              <div class="bar">
+              </li>
+              <li class="skills__item">
                 js
-                <div class="line__basic">
-                  <div class="line__blue l" style="width: 60%"></div>
+                <div class="skills__bar">
+                  <div class="skills__progress" style="width: 61%"></div>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section class="services section">
+      <section class="section services">
         <div class="container">
           <h2 class="title">Послуги</h2>
           <ul class="services__list">
-            <li class="services__item services__item-code">
-              <h3 class="sevices__subtitel">Верстка проєктів</h3>
-              <p class="services__text">
-                Зроблю якісну верстку вашого проєкта за наявним макетом або прикладами робіт, які вам подобаються
-              </p>
+            <li class="services__item services__icon--code">
+              <h3 class="sevices__subtitle">Верстка проєктів</h3>
+              <p class="services__text">Зроблю якісну верстку вашого проєкта за наявним макетом або прикладами робіт, які вам подобаються</p>
             </li>
-            <li class="services__item services__item-dev">
-              <h3 class="sevices__subtitel">Посадка на CMS</h3>
+            <li class="services__item services__icon--dev">
+              <h3 class="sevices__subtitle">Посадка на CMS</h3>
               <p class="services__text">Інтегрую ваш проєкт з однією з популярних CMS</p>
             </li>
-            <li class="services__item services__item-chat">
-              <h3 class="sevices__subtitel">Підтримка сайта</h3>
+            <li class="services__item services__icon--chat">
+              <h3 class="sevices__subtitle">Підтримка сайта</h3>
               <p class="services__text">Гарантую підтримку вашого сайта протягом 30 днів післе здачі проєкта</p>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="work section">
+      <section class="section work">
         <div class="container">
-          <h2 class="title work__title">Мої роботи</h2>
-          <div class="work__filter">
-            <ul class="work__list">
-              <li class="work__item">
-                <a class="work__link" data-filter="all" href="#">Усі роботи</a>
-              </li>
-              <li class="work__item">
-                <a class="work__link" data-filter=".category-a" href="#">Лендінги </a>
-              </li>
-              <li class="work__item">
-                <a class="work__link" data-filter=".category-b" href="#">Корпоративні </a>
-              </li>
-              <li class="work__item">
-                <a class="work__link" data-filter=".category-c" href="#">E-commerce </a>
-              </li>
-            </ul>
-          </div>
-          <div class="work__gallery">
-            <div class="work__gallery-item mix category-a">
-              <img class="work__img" src="./images/works/work_1.jpg" alt="фото роботи" />
-            </div>
-            <div class="work__gallery-item mix category-b">
-              <img class="work__img" src="./images/works/work_2.jpg" alt="фото роботи" />
-            </div>
-            <div class="work__gallery-item mix category-c">
-              <img class="work__img" src="./images/works/work_3.jpg" alt="фото роботи" />
-            </div>
-            <div class="work__gallery-item mix category-a">
-              <img class="work__img" src="./images/works/work_4.jpg" alt="фото роботи" />
-            </div>
-            <div class="work__gallery-item mix category-b">
-              <img class="work__img" src="./images/works/work_5.jpg" alt="фото роботи" />
-            </div>
-            <div class="work__gallery-item mix category-c">
-              <img class="work__img" src="./images/works/work_6.jpg" alt="фото роботи" />
-            </div>
-          </div>
-          <button class="work__download-btn" type="button">Завантажити ще</button>
+          <h2 class="title">Мої роботи</h2>
+          <ul class="work__filter">
+            <li class="work__item">
+              <button class="work__btn" type="button" data-filter="all">Усі роботи</button>
+            </li>
+            <li class="work__item">
+              <button class="work__btn" type="button" data-filter=".category-a">Лендінги</button>
+            </li>
+            <li class="work__item">
+              <button class="work__btn" type="button" data-filter=".category-b">Корпоративні</button>
+            </li>
+            <li class="work__item">
+              <button class="work__btn" type="button" data-filter=".category-c">E-commerce</button>
+            </li>
+          </ul>
+          <ul class="gallery">
+            <li class="gallery__item mix category-a">
+              <img class="gallery__img" src="./images/works/work_1.jpg" alt="невеліке місто на річці" />
+              <a class="gallery__link" href="#">Показати роботу</a>
+            </li>
+            <li class="gallery__item mix category-b">
+              <img class="gallery__img" src="./images/works/work_3.jpg" alt="невеликі судна йдуть під мостом" />
+              <a class="gallery__link" href="#">Показати роботу</a>
+            </li>
+            <li class="gallery__item mix category-c">
+              <img class="gallery__img" src="./images/works/work_5.jpg" alt="блакитний міст-метро з аркою" />
+              <a class="gallery__link" href="#">Показати роботу</a>
+            </li>
+            <li class="gallery__item mix category-a">
+              <img class="gallery__img" src="./images/works/work_2.jpg" alt="велике місто на річці" />
+              <a class="gallery__link" href="#">Показати роботу</a>
+            </li>
+            <li class="gallery__item mix category-b">
+              <img class="gallery__img" src="./images/works/work_4.jpg" alt="море, безлюдний піщаний пляж з пальмами і захід сонця" />
+              <a class="gallery__link" href="#">Показати роботу</a>
+            </li>
+            <li class="gallery__item mix category-c">
+              <img class="gallery__img" src="./images/works/work_6.jpg" alt="людина стоїть на високій скелі яка йде у море" />
+              <a class="gallery__link" href="#">Показати роботу</a>
+            </li>
+          </ul>
+          <button class="btn" type="button">Завантажити ще</button>
         </div>
       </section>
 
-      <section class="reviews"></section>
+      <section class="section review">
+        <div class="container">
+          <h2 class="title">Відгуки клієнтів</h2>
+          <div class="review__list">
+            <div class="review__card">
+              <img class="review__img" src="./images/reviews__img.jpg" alt="Марк Цукурберг" />
+              <h4 class="review__title">Марк Цукерберг</h4>
+              <p class="review__text">Фантастично! Я цілком задоволений роботою цього спеціаліста. Швидко і якісно. Рекомендую!</p>
+            </div>
+            <a class="review__video" data-fancybox href="http://www.youtube.com/watch?v=wCJWpduTCKw">
+              <img class="reviews__video-img" src="./images/video.jpg" alt="історія Марка Цукерберга" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <ul class="statistic__list">
+            <li class="statistic__item statistic__item-work">
+              <h4 class="statistic__subtitle">Виконаних робіт</h4>
+              <p class="statistic__number">56</p>
+            </li>
+            <li class="statistic__item statistic__item-clients">
+              <h4 class="statistic__subtitle">Задоволених клієнтів</h4>
+              <p class="statistic__number">23</p>
+            </li>
+            <li class="statistic__item statistic__item-coffee">
+              <h4 class="statistic__subtitle">Випито горнят кави</h4>
+              <p class="statistic__number">477</p>
+            </li>
+            <li class="statistic__item statistic__item-review">
+              <h4 class="statistic__subtitle">Усього відгуків</h4>
+              <p class="statistic__number">48</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section contacts">
+        <div class="container">
+          <h2 class="title">Контакти</h2>
+
+          <div class="contacts__wrapper">
+            <div class="connection">
+              <p class="contacts__text">Вийти зі мною на зв’язок можна, скориставшись контактною формою, або напряму за номером телефона, email, у соцмережах:</p>
+              <a class="connection__tel" href="tel:+38050111111">+38 (050) 111 11 11</a>
+              <a class="connection__mail" href="mailto:frontend-monster@email.com">frontend-monster@email.com</a>
+              <ul class="connection__list">
+                <li class="connection__item">
+                  <a class="connection__link" href="#" aria-label="instagram">
+                    <svg class="connection__icon" width="44px" height="44px">
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="connection__item">
+                  <a class="connection__link" href="#" aria-label="facebook">
+                    <svg class="connection__icon" width="44px" height="44px">
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="connection__item">
+                  <a class="connection__link" href="#" aria-label="telegram">
+                    <svg class="connection__icon" width="44px" height="44px">
+                      <use href="./images/icons.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <form class="form">
+              <div class="form__contacts">
+                <label for="username"
+                  >Ваше ім’я
+                  <input type="text" id="username" placeholder="Іван" />
+                </label>
+                <label for="number"
+                  >Номер телефона
+                  <input type="tel" id="number" placeholder="+380501111111" />
+                </label>
+              </div>
+
+              <label for="message">Ваше повідомлення</label>
+              <textarea id="message" placeholder="Текст вашого повідомлення"></textarea>
+              <button class="btn" type="button">Надіслати</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <a class="logo" href="#">
+          <img class="logo__img" src="./images/logo-svg.svg" alt="логотип" />
+        </a>
+      </footer>
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/mixitup.min.js"></script>
     <script src="./js/main.js"></script>
   </body>

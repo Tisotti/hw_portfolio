@@ -1,7 +1,7 @@
 {
   "liveServer.settings.port": 5501,
   "prettier.embeddedLanguageFormatting": "off",
-  "prettier.printWidth": 120,
+  "prettier.printWidth": 200,
   
 
 }
